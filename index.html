@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>local notes</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Add note container -->
+			<div class="add-note">
+				<div class="note-box">
+					<i class="bx bx-plus"></i>
+					<h3 class="add-text">Add Note</h3>
+				</div>
+			</div>
+
+			<!-- Modal Container-->
+			<div class="modal-container">
+				<div class="modal">
+					<div class="title">
+						<p>Add a new note</p>
+						<i class="bx bx-x"></i>
+					</div>
+					<form action="#">
+						<div class="form-fields">
+							<input
+								type="text"
+								name="title"
+								id="title"
+								placeholder="Title"
+							/>
+							<textarea
+								rows="4"
+								columns="40"
+								maxlength="280"
+								name="description"
+								placeholder="Description"
+								required
+							></textarea>
+						</div>
+						<input type="submit" value="Save" class="submit" />
+						<i class="bx bxs-trash delete"></i>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
